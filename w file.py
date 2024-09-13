@@ -1,0 +1,6 @@
+answer = input("Write somthing down")
+file = open("report.txt", "w")
+file.write(answer)
+File.close()
+file= open("report.txt", "r")
+print(file.read())
