@@ -2,12 +2,19 @@ this_list = ['panda', 'lion', 'giraffe', 'tiger', 'elephant', 'monkey', 'fish', 
 
 def feeding(this_list):
     if len(this_list) == 1:
-        this_list = [0]
+        animals = this_list[0]
+        print("the" + " " + animals + " " + "has been fed" )
 
+        
     else:
         mid = len(this_list) // 2
         first_half = this_list[:mid]
         second_half = this_list[mid:]
+
+    
+
+        feeding(first_half)
+        feeding(second_half)
 
 
 feeding(this_list)
