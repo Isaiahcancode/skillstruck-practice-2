@@ -1,6 +1,15 @@
-file = open("letter.txt", "a")
-file.write("Quote was said by Gandhi")
-file.close()
+# Simple ASCII Art
+def print_ascii_art():
+    art = r"""
+             (     )
+          ( ) |   | ( ) [ ]
+         /  /       \  \  |   
+        |  /         \  | \  
+        \__|         |__/ \
+    ____@__\_________/__@____\__
+    """
 
-file = open("letter.txt", "r")
-print(file.read())
+    print(art)
+
+if __name__ == "__main__":
+    print_ascii_art()
